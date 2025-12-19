@@ -3,7 +3,7 @@ let skip = "<button type='button' onclick='Next()'>Skip</button>";
 let debug = 0;
 
 // ======================================== POZIOMY ==============================================
-let level = 5; // level number
+let level = 0; // level number
 // odpowiedzi do poziomów---------------------------------------------------------
 let passcodes = [
     'prezent',
