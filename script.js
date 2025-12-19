@@ -3,7 +3,7 @@ let skip = "<button type='button' onclick='Next()'>Skip</button>";
 let debug = 0;
 
 // ======================================== POZIOMY ==============================================
-let level = 0; // level number
+let level = 5; // level number
 // odpowiedzi do poziomów---------------------------------------------------------
 let passcodes = [
     'prezent',
@@ -557,6 +557,7 @@ function Koniec(){
         kik.appendChild(retry);
     }
     loses++;
+    noloses.innerHTML = "Gry: " + loses; 
 }
 // -------------------------------- Restart gry --------------------------------
 function Retry(){ 
@@ -593,7 +594,6 @@ function Retry(){
     if(loses == 1 ) {
         kik.appendChild(noloses);
     }
-    noloses.innerHTML = "Gry: " + loses; 
 
 
     // --------------- reset --------------- 
